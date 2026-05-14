@@ -4,12 +4,7 @@ import { Metadata } from "next";
 import { sanityFetch } from "@/lib/sanity.client";
 import { singleImageItemQuery } from "@/lib/sanity.query";
 import { ImageItemType } from "@/types";
-import dynamic from 'next/dynamic';
-
-const PageHeading = dynamic(
-  () => import('@/app/components/shared/PageHeading'),
-  { ssr: false }
-);
+import PageHeading from "@/app/components/shared/PageHeading";
 
 export const metadata: Metadata = {
   title: "Photos | Het saraiya",

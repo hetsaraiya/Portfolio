@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# node compile cache
+/node-compile-cache/
+
 # production
 /build
 
